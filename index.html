@@ -192,15 +192,28 @@
 	<script type="text/javascript">
 		var nav = document.getElementById("mainNavbar");
 
+		var navBarLinked = false;
+
+		$(function() {
+	  	$(document).click(function (event) {
+	    	$('.navbar-collapse').collapse('hide');
+	    	navBarLinked = true;
+	  	});
+		});
+
 		window.onscroll = function(e) {
-			if (
+
+			if ( !navBarLinked &&
 				(this.oldScroll < this.scrollY && !(nav.classList.contains("hide"))) || 
 				(this.oldScroll > this.scrollY && (nav.classList.contains("hide")))) { //going down
 				nav.classList.toggle("hide");
 			}
 			this.oldScroll = this.scrollY;
 		}
+
+
 	</script>
+
 
 </body>
 </html>
