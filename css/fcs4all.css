@@ -135,7 +135,7 @@ body {
 
 @media(max-width: 575.98px){
   .content-block p {
-    font-size: .7em;
+    font-size: .8em;
     letter-spacing: .005em;
     line-height: 1.28em;
   }
