@@ -1,0 +1,204 @@
+ html {
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+     display: block;
+     background: white;
+     font-size: 16pt;
+     height: 100%;
+     max-height: 100%;
+ }
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: .005em;
+    line-height: 1.28em;
+}
+
+/* ------------------- GRADIENTS ------------------------ */
+
+#head-gradient {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1rem;
+    background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,0)90%);
+    z-index: 15;
+}
+
+#foot-gradient {
+    position: fixed;
+    margin: 0px;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1.4rem;
+    background: linear-gradient(rgba(255,255,255,0)10%, rgba(255,255,255,.9));
+    z-index: 15;
+}
+
+/* --------------------- NAV BAR --------------------------- */
+.navbar {
+    background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,.5)383%);
+    padding-left: 2.3rem;
+    z-index: 5;
+    transition: top 200ms;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-brand {
+  color: black;
+}
+
+.navbar-brand:hover {
+  color: #1dff1d;
+}
+
+.nav-link {
+  border-left: 1px black solid;
+  color: black;
+  text-decoration: none;
+  margin-right: 2.3rem;
+}
+
+.nav-link:hover {
+  color: #1dff1d;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 0em;
+}
+
+.hide {
+    transition: top 200ms;
+    top: -1.7rem;
+}
+
+/* ------------------- GREEN COLUMN ------------------------ */
+#green-box {
+    left: 0;
+    width: 1.7rem;
+    background: #1dff1d;
+    position: fixed;
+    left: 0;
+    top: 0px;
+    height: 100%;
+    z-index: 10;
+    overflow: auto;
+}
+
+/* ------------------- BANNERS ---------------------- */
+
+.vertical-banner {
+  width: .36rem;
+  background: white;
+  position: fixed;
+  z-index: 18;
+  top: -1px;
+  bottom: 0px;
+  height: 100%;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+}
+
+#banner-left .vertical-banner{
+   left: 30px;
+}
+
+.horizontal-banner {
+    width: 1.4rem;
+    background: white;
+    position: absolute;
+    z-index: 18;
+    height: 0.36rem;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+}
+
+/* ------------------- SECTION CONTENT ------------------------ */
+
+.content-block{
+  position: relative;
+}
+
+.small-banner {
+  position: absolute;
+  left: -48px;
+  z-index: 4;
+}
+
+.section-header {
+  position: absolute;
+  z-index: 15;
+  font-weight: 600;
+  font-size: .65em;
+  letter-spacing: .1em;
+  transform: rotate(90deg);
+  transform-origin: left;
+    top: 78px;
+    left: 14px;
+}
+
+@media (max-width: 768px)
+.content-block p {
+    font-size: .7rem;
+}
+
+p {
+    margin-top: 1rem;
+}
+
+.content {
+    padding-left: 34px;
+}
+
+.cs4all {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: .9em;
+}
+
+.link {
+  font-weight: 600;
+  color: #1dff1d;
+}
+
+a:hover {
+  color: rgb(39, 186, 48);
+}
+
+#FCclassroom {
+  margin-top: .4rem;
+}
+
+.curr-banner {
+  position: absolute;
+  left: 0rem;
+  margin-top: -.2rem;
+}
+
+.curr-link {
+    font-weight: 600;
+}
+
+#intro, #foodcomp, #curriculum, #aboutus {
+  padding-top: 60px;
+  background: white;
+}
+
+
+
