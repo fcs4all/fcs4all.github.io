@@ -202,8 +202,8 @@
 		});
 
 		window.onscroll = function(e) {
-
-			if ( !navBarLinked &&
+			var scrollPosition = $("body, html").scrollTop();
+			if ( !navBarLinked && (scrollPosition != 0) &&
 				(this.oldScroll < this.scrollY && !(nav.classList.contains("hide"))) || 
 				(this.oldScroll > this.scrollY && (nav.classList.contains("hide")))) { //going down
 				nav.classList.toggle("hide");
