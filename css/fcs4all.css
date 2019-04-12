@@ -19,6 +19,8 @@ body {
     line-height: 1.28em;
 }
 
+
+
 /* ------------------- GRADIENTS ------------------------ */
 
 #head-gradient {
@@ -131,6 +133,14 @@ body {
 
 /* ------------------- SECTION CONTENT ------------------------ */
 
+@media(max-width: 575.98px){
+  .content-block p {
+    font-size: .7em;
+    letter-spacing: .005em;
+    line-height: 1.28em;
+  }
+}
+
 .content-block{
   position: relative;
 }
@@ -149,13 +159,8 @@ body {
   letter-spacing: .1em;
   transform: rotate(90deg);
   transform-origin: left;
-    top: 78px;
-    left: 14px;
-}
-
-@media (max-width: 768px)
-.content-block p {
-    font-size: .7rem;
+  top: 78px;
+  left: 14px;
 }
 
 p {
@@ -203,6 +208,3 @@ a:hover {
   padding-top: 60px;
   background: white;
 }
-
-
-
