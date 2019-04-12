@@ -181,6 +181,10 @@ a:hover {
   color: rgb(39, 186, 48);
 }
 
+.resource-link {
+  position: relative;
+}
+
 #FCclassroom {
   margin-top: .4rem;
 }
